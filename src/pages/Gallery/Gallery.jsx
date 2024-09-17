@@ -1,4 +1,3 @@
-import PictureCard from "@/components/Pictures/PictureCard";
 import React, { useEffect, useState } from "react";
 import "./Gallery.css";
 import GalleryPicture from "@/components/GalleryPicture/GalleryPicture";

@@ -16,12 +16,13 @@ function Search() {
   }, []);
 
   const handleChange = (event) => {
-    setInputBread(event.target.value);
+    setInputBread(event.target.value.toLowerCase());
   };
 
   const handleOnClick = () => {
     setNotFound("");
     setPictures([]);
+
     if (breeds[inputBreed]) {
       fetch(`https://dog.ceo/api/breed/${inputBreed}/images`)
         .then((res) => res.json())
