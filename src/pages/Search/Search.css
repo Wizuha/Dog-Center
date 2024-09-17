@@ -1,0 +1,89 @@
+.search-page {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 75);
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.search-page label {
+  font-family: "Oswald Regular";
+  color: #2c2e40;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+  gap: 25px;
+}
+
+.search-bar input {
+  border: 2px #cdcdcd solid;
+  border-radius: 3px;
+  padding: 11px 20px 13px;
+  font-size: 0.875rem;
+}
+
+.search-bar button {
+  background-color: #bc915b;
+  border: 1px solid #bc915b;
+  color: #fff;
+  padding: 12px 73px;
+  border-radius: 3px;
+  font-family: "Oswald Light";
+  font-size: 16px;
+  transition: color 0.2s ease, border-color 0.2s ease,
+    background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  border: 1px solid #bc915b;
+  color: #bc915b;
+  background-color: #fff;
+}
+
+.search-picture {
+  margin-top: 20px;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 4rem;
+  font-family: Arial, sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .search-bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 300px;
+    gap: 25px;
+  }
+
+  .search-bar input {
+    border: 2px #cdcdcd solid;
+    border-radius: 3px;
+    padding: 11px 20px 13px;
+    font-size: 0.875rem;
+  }
+
+  .search-bar button {
+    background-color: #bc915b;
+    border: 1px solid #bc915b;
+    color: #fff;
+    padding: 12px 73px;
+    border-radius: 3px;
+    font-family: "Oswald Light";
+    font-size: 16px;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease ;
+    cursor: pointer;
+  }
+}

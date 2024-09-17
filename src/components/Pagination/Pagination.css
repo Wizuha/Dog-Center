@@ -1,0 +1,32 @@
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pagination button{
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-family: 'Oswald Regular';
+    font-size: 12px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #F8F8F9;
+    margin: 5px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination button:hover{
+    background-color: #171a29;
+    color: #fff;
+}
+
+.pagination button.active {
+    font-weight: 600;
+    background-color: #BC915B;
+    color: #fff;
+}
